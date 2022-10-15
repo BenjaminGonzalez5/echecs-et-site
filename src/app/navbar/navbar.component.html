@@ -1,7 +1,11 @@
 <ul>
-  <li><a class="active logo" href="home"><img width="56px" height="56px" src="assets/logo.png" alt="Logo" /></a></li>
-  <li><a href="protfolio">Portfolio</a></li>
-  <li><a href="starwars">Lego Star Wars</a></li>
-  <li><a href="coccinelles">VW coccinelles</a></li>
-  <li><a href="setup">Setup</a></li>
+  <li>
+    <a [ngClass]="{logo: true, active: activeTab == 'home'}" href="home" id="home">
+      <img width="56px" height="56px" src="assets/logo.png" alt="Logo" />
+    </a>
+  </li>
+  <li><a [ngClass]="{active: activeTab == 'portfolio'}" href="portfolio" id="portfolio">Portfolio</a></li>
+  <li><a [ngClass]="{active: activeTab == 'starwars'}" href="starwars">Lego Star Wars</a></li>
+  <li><a [ngClass]="{active: activeTab == 'coccinelles'}" href="coccinelles">VW coccinelles</a></li>
+  <li><a [ngClass]="{active: activeTab == 'setup'}" href="setup">Setup</a></li>
 </ul>

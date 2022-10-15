@@ -12,4 +12,9 @@ body {
   background-color: var(--background);
   font-family: arial,sans-serif;
   font-weight: 200;
+  color: var(--color);
+}
+
+.body-without-navbar {
+  margin-top: 56px;
 }
